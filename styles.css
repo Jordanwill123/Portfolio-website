@@ -106,7 +106,7 @@ a:hover {
     transition: transform 0.2s ease;
 }
 
-.qr-code-img:hover {
+.qrcode-img:hover {
     transform: scale(1.05);
 }
 
