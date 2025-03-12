@@ -75,7 +75,7 @@ header h1 {
 }
 
 /* QR Code Section - Centering and Background */
-#qrcode-img{
+#qrcode {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,14 +90,14 @@ header h1 {
 
 
 /* QR Code Styling */
-.qrcode-img {
+.qrcode {
     width: 100px;
     height: 100px;
     cursor: pointer;
     transition: transform 0.2s ease;
 }
 
-.qrcode-img:hover {
+.qrcode :hover {
     transform: scale(1.05);
 }
 
