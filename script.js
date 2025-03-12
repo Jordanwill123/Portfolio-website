@@ -1,15 +1,19 @@
-var botui = new BotUI('botui-app');
-
-botui.message.add({
-    content: 'Hello! How can I help you today?'
-}).then(function() {
-    return botui.action.text({
-        action: {
-            placeholder: 'Ask me about my skills, experience, or projects!'
-        }
-    });
-}).then(function(res) {
-    botui.message.add({
-        content: 'You asked about: ' + res.value
-    });
-});
+function sendMessage() {
+    var userInput = document.getElementById('user-input').value;
+    var chatBox = document.getElementById('chat-box');
+    
+    if (userInput.trim() !== "") {
+        var userMessage = document.createElement('div');
+        userMessage.classList.add('chat-message', 'user-message');
+        userMessage.innerHTML = `<p>${userInput}</p>`;
+        chatBox.appendChild(userMessage);
+        
+        var botMessage = document.createElement('div');
+        botMessage.classList.add('chat-message', 'bot-message');
+        botMessage.innerHTML = `<p>Thanks for your question! Let me get back to you.</p>`;
+        chatBox.appendChild(botMessage);
+        
+        document.getElementById('user-input').value = "";  // Clear input field
+        chatBox.scrollTop = chatBox.scrollHeight;  // Scroll to the bottom
+    }
+}
