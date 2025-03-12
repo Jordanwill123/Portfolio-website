@@ -12,6 +12,13 @@ body {
     line-height: 1.6;
 }
 
+.lora-<uniquifier> {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
 }
