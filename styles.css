@@ -1,3 +1,4 @@
+/* Reset and Global Styles */
 {
     margin: 0;
     padding: 0;
@@ -11,11 +12,13 @@ body {
     line-height: 1.6;
 }
 
+/* Container */
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
+/* Header Section */
 header {
     background-color: #2575fc;
     color: #fff;
@@ -36,58 +39,61 @@ header h1 {
     margin-top: 10px;
 }
 
-section {
-    padding: 40px 0;
-}
-
-h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
 /* About Section - Black Background */
 #about {
     background-color: #000;
     color: #fff;
+    padding: 40px 0;
 }
 
-/* Blue Background with White Text for Contact, Projects, and Resume */
-#projects, #contact, #resume {
-    background-color: #2575fc; /* Blue background */
-    color: #fff; /* White text */
+/* Flexbox for Projects, Resume, and Contact Side-by-Side */
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
 }
 
-/* Links - Dark Grey Color */
-#projects a, #contact a, #resume a {
-    color: #666; /* Dark Grey Links */
-    text-decoration: none;
-}
-
-#projects a:hover, #contact a:hover, #resume a:hover {
-    color: #444; /* Darker Grey on hover */
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-a {
-    color: #2575fc;
-    text-decoration: none;
-}
-
-button {
-    padding: 10px 20px;
+/* Individual Sections */
+#projects, #resume, #contact {
+    flex: 1;
     background-color: #2575fc;
-    color: white;
-    border: none;
+    color: #fff;
+    padding: 20px;
     border-radius: 5px;
-    cursor: pointer;
+    text-align: center;
 }
 
-button:hover {
-    background-color: #1a60c4;
+/* Links Styling */
+#projects a, #resume a, #contact a {
+    color: #000;
+    text-decoration: none;
+}
+
+#projects a:hover, #resume a:hover, #contact a:hover {
+    color: #444;
+}
+
+/* QR Code Section - Centering */
+#qr-code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* QR Code Styling */
+.qr-code {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.qr-code:hover {
+    transform: scale(1.05);
 }
 
 /* Chatbot */
