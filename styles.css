@@ -51,14 +51,14 @@ h2 {
     color: #fff;
 }
 
-/* Links - Dark Grey Color */
+/* Links - black Color */
 a {
     color: #000; /* black Links */
     text-decoration: none;
 }
 
 a:hover {
-    color: #444; /* Darker Grey on hover */
+    color: #000; /* black on hover */
 }
 
 p {
