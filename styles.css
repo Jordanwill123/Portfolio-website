@@ -6,11 +6,16 @@
 }
 
 body {
-    font-family: Lora, sans-serif;
+    font-family: 'Lora', serif;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
 }
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 /* Container */
 .container {
