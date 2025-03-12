@@ -91,8 +91,15 @@ button:hover {
     width: auto;
     height: auto;
     display: block;
-    margin: 0 auto; /* Center it horizontally */
+    margin: 0 auto;
+    cursor: pointer; /* Makes it clear it's clickable */
+    transition: transform 0.2s ease;
 }
+
+.qrcode-img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}/* Center it horizontally */
+
 
 
 /* Chatbot */
