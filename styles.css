@@ -51,14 +51,25 @@ h2 {
     color: #fff;
 }
 
+/* All sections under About - Blue Background with Black Text */
+section:not(#about) {
+    background-color: #2575fc; /* Blue background */
+    color: #000; /* Black text */
+}
+
 p {
     font-size: 16px;
     line-height: 1.5;
 }
 
+/* Dark Grey Links */
 a {
-    color: #2575fc;
+    color: #666; /* Dark Grey Links */
     text-decoration: none;
+}
+
+a:hover {
+    color: #444; /* Slightly darker grey on hover */
 }
 
 button {
@@ -124,4 +135,3 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-
