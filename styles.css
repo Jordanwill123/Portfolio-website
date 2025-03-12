@@ -1,93 +1,84 @@
 {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
- }
- 
- body {
-     font-family: Arial, sans-serif;
-     background-color: #2575fc; /* Blue background for the entire page */
-     color: #fff; /* White text for contrast */
-     line-height: 1.6;
- }
- 
- .container {
-     width: 80%;
-     margin: 0 auto;
- }
- 
- header {
-     background-color: #2575fc;
-     color: #fff;
-     text-align: center;
-     padding: 20px;
-     border-radius: 5px;
-     margin-bottom: 20px;
- }
- 
- header h1 {
-     font-size: 36px;
- }
- 
- .profile-img {
-     width: 150px;
-     height: 150px;
-     border-radius: 50%;
-     margin-top: 10px;
- }
- 
- section {
-     padding: 40px 0;
- }
- 
- h2 {
-     font-size: 28px;
-     margin-bottom: 20px;
- }
- 
- /* About Section - Black Background */
- #about {
-     background-color: #000; /* Black background for About section */
-     color: #fff;
- }
- 
- /* Links - Black Color */
- a {
-     color: #000; /* Black Links */
-     text-decoration: none;
- }
- 
- a:hover {
-     color: #333; /* Slightly lighter black on hover */
- }
- 
- /* Blue Background with White Text for Contact, Projects, and Resume */
- .info-container {
-     display: flex;
-     justify-content: space-between; /* Space between both sections */
-     gap: 20px; /* Adds space between them */
-     margin-top: 20px;
- }
- 
- /* Resume and Contact styling */
- #project, #resume, #contact {
-     flex: 1; /* Makes both sections take equal space */
-     background-color: #2575fc; /* Blue background */
-     color: white;
-     padding: 20px;
-     border-radius: 5px;
-     text-align: center;
- }
- 
- #project a, #resume a, #contact a {
-     color: #000; /* Black links */
-     text-decoration: none;
- }
- 
- #project a:hover #resume a:hover, #contact a:hover {
-     color: #333;
- }
- 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2575fc; /* Blue background for the entire page */
+    color: #fff; /* White text for contrast */
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #2575fc;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* About Section - Black Background */
+#about {
+    background-color: #000; /* Black background for About section */
+    color: #fff;
+}
+
+/* Links - Dark Grey Color */
+a {
+    color: #666; /* Dark Grey Links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #444; /* Darker Grey on hover */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1a60c4;
+}
+
  #qrcode-img {
      display: flex;
      flex-direction: column;
