@@ -70,7 +70,7 @@ a:hover {
 }
 
 /* Resume and Contact styling */
-#project #resume, #contact {
+#project, #resume, #contact {
     flex: 1; /* Makes both sections take equal space */
     background-color: #2575fc; /* Blue background */
     color: white;
@@ -79,12 +79,12 @@ a:hover {
     text-align: center;
 }
 
-#resume a, #contact a {
+#project, #resume a, #contact a {
     color: #000; /* Black links */
     text-decoration: none;
 }
 
-#resume a:hover, #contact a:hover {
+#project a:hover #resume a:hover, #contact a:hover {
     color: #333;
 }
 .qrcode-img {
