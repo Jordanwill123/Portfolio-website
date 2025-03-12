@@ -75,7 +75,7 @@ header h1 {
 }
 
 /* QR Code Section - Centering and Background */
-#qrcode {
+#qr-code {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,14 +90,14 @@ header h1 {
 
 
 /* QR Code Styling */
-.qrcode {
-    width: 100px;
-    height: 100px;
+.qr-code {
+    width: 50px;
+    height: 50px;
     cursor: pointer;
     transition: transform 0.2s ease;
 }
 
-.qrcode :hover {
+.qr-code :hover {
     transform: scale(1.05);
 }
 
@@ -106,7 +106,7 @@ header h1 {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    width: 200px;
+    width: 300px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -114,7 +114,7 @@ header h1 {
 }
 
 .chat-box {
-    max-height: 200px;
+    max-height: 300px;
     overflow-y: auto;
     margin-bottom: 10px;
 }
