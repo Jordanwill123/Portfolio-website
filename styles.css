@@ -51,10 +51,20 @@ h2 {
     color: #fff;
 }
 
-/* All sections under About - Blue Background with Black Text */
-section:not(#about) {
+/* Blue Background with White Text for Contact, Projects, and Resume */
+#projects, #contact, #resume {
     background-color: #2575fc; /* Blue background */
-    color: #000; /* Black text */
+    color: #fff; /* White text */
+}
+
+/* Links - Dark Grey Color */
+#projects a, #contact a, #resume a {
+    color: #666; /* Dark Grey Links */
+    text-decoration: none;
+}
+
+#projects a:hover, #contact a:hover, #resume a:hover {
+    color: #444; /* Darker Grey on hover */
 }
 
 p {
@@ -62,14 +72,9 @@ p {
     line-height: 1.5;
 }
 
-/* Dark Grey Links */
 a {
-    color: #666; /* Dark Grey Links */
+    color: #2575fc;
     text-decoration: none;
-}
-
-a:hover {
-    color: #444; /* Slightly darker grey on hover */
 }
 
 button {
