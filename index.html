@@ -1,34 +1,84 @@
-<section id="home">
-    <div class="home-content">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm Jordan Williams, a senior at Bowie State University studying Computer Technology with a focus on Network Infrastructure. I’m also a student-athlete, an entrepreneur with my own detailing business, and a fitness enthusiast from Prince George's County, MD.</p>
-        <img src="your-profile-picture.jpg" alt="Jordan Williams" class="profile-img">
-    </div>
-</section>
-<section id="about">
-    <div class="about-content">
-        <h2>About Me</h2>
-        <p>Jordan Williams possesses a diverse range of skills and experience across multiple industries, including business management, customer service, technology, and food service. As the Owner and CEO of Lenair Auto Detailing in Brandywine, MD, since May 2020, he has gained hands-on experience in managing business operations, handling customer inquiries, maintaining inventory, and operating equipment such as buffers and vacuums to meet service expectations. His leadership and organizational skills allow him to efficiently manage seasonal operations while ensuring high-quality service.</p>
-        <p>His experience in retail and food service includes working as a team member at Shoe City and Chick-fil-A, where he developed strong customer service skills, cash handling expertise, and the ability to manage inventory and restock supplies. At Shoe City, he assisted customers with shoe selections, operated the register, and processed transactions, while at Chick-fil-A, he maintained cleanliness, took customer orders, and followed strict health regulations. Currently, as a server at Harmony at Waldorf, he ensures a clean and orderly dining environment, serves residents and guests, and follows food safety protocols.</p>
-        <p>In addition to his professional experience, Jordan has a strong technical background as a senior at Bowie State University majoring in Computer Technology with a focus on Network Infrastructure. His technical skills include proficiency in Microsoft Word, JavaScript, and HTML5, as well as experience with computer hardware. His ability to balance technical knowledge with business and customer service skills demonstrates his adaptability and well-rounded expertise. Known for his reliability, time management, and organizational skills, Jordan is a responsible and dedicated professional who consistently delivers quality results in all his endeavors.</p>
-    </div>
-</section>
-<section id="projects">
-    <div class="projects-content">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/Jordanwill123/Python-codes" target="_blank">Python Coding Projects</a></li>
-            <li><a href="https://github.com/your-github-username/auto-detailing-project" target="_blank">Auto Detailing Management System</a></li>
-            <li><a href="https://github.com/your-github-username/portfolio-website" target="_blank">Portfolio Website</a></li>
-        </ul>
-    </div>
-</section>
-<section id="resume">
-    <div class="resume-content">
-        <h2>Resume</h2>
-        <p>Click below to download my updated resume.</p>
-        <a href="resume.pdf" download class="resume-link">Download Resume</a>
-    </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Williams' Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="home">
+        <div class="container">
+            <h1>Jordan Williams</h1>
+            <p class="title">Senior at Bowie State University | Network Infrastructure | CEO of Lenair Auto Detailing</p>
+            <img src="images/your-profile-picture.jpg" alt="Jordan Williams" class="profile-img">
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Jordan Williams possesses a diverse range of skills and experience across multiple industries, including business management, customer service, technology, and food service. As the Owner and CEO of Lenair Auto Detailing in Brandywine, MD, since May 2020, he has gained hands-on experience in managing business operations, handling customer inquiries, maintaining inventory, and operating equipment such as buffers and vacuums to meet service expectations. His leadership and organizational skills allow him to efficiently manage seasonal operations while ensuring high-quality service.
+            </p>
+            <p>
+                His experience in retail and food service includes working as a team member at Shoe City and Chick-fil-A, where he developed strong customer service skills, cash handling expertise, and the ability to manage inventory and restock supplies. At Shoe City, he assisted customers with shoe selections, operated the register, and processed transactions, while at Chick-fil-A, he maintained cleanliness, took customer orders, and followed strict health regulations. Currently, as a server at Harmony at Waldorf, he ensures a clean and orderly dining environment, serves residents and guests, and follows food safety protocols.
+            </p>
+            <p>
+                In addition to his professional experience, Jordan has a strong technical background as a senior at Bowie State University majoring in Computer Technology with a focus on Network Infrastructure. His technical skills include proficiency in Microsoft Word, JavaScript, and HTML5, as well as experience with computer hardware. His ability to balance technical knowledge with business and customer service skills demonstrates his adaptability and well-rounded expertise. Known for his reliability, time management, and organizational skills, Jordan is a responsible and dedicated professional who consistently delivers quality results in all his endeavors.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="https://github.com/Jordanwill123/Python-codes" target="_blank">Python Codes - GitHub</a></li>
+                <!-- Add more projects as necessary -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>Click the button below to download my resume:</p>
+            <a href="resume.pdf" download="JordanWilliams_Resume.pdf" class="button">Download Resume</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>You can reach me on LinkedIn:</p>
+            <a href="https://www.linkedin.com/in/jordan-williams-123/" target="_blank">LinkedIn Profile</a>
+        </div>
+    </section>
+
+    <!-- Chatbot Section -->
+    <section id="chatbot">
+        <div class="chat-container">
+            <div id="chat-box" class="chat-box">
+                <div class="chat-message bot-message">
+                    <p>Hello! How can I help you today?</p>
+                </div>
+            </div>
+            <input type="text" id="user-input" placeholder="Ask me something..." />
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </section>
+
+    <!-- Tidio Chatbot (Optional, or use the custom JavaScript) -->
+    <script src="https://code.tidio.co/your-unique-tidio-code.js" async></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
 
 
