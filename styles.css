@@ -86,10 +86,12 @@ button:hover {
 }
 
 .qrcode-img {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    margin-top: 10px;
+  max-width: 100px; /* Adjust to the size you want */
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center it horizontally */
 }
 
 
