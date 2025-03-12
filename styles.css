@@ -86,8 +86,8 @@ button:hover {
 }
 
 .qrcode-img {
-    width: 150px; /* Adjust size */
-    height: 150px; /* Adjust size */
+    width: 50px; /* Adjust size */
+    height: 50px; /* Adjust size */
     margin-top: 20px;
 }
 
