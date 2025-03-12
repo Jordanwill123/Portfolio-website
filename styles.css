@@ -86,8 +86,8 @@ button:hover {
 }
 
 .qrcode-img {
-  max-width: 50px; /* Adjust to the size you want */
-    max-height: 50px;
+  max-width: 20px; /* Adjust to the size you want */
+    max-height: 20px;
     width: auto;
     height: auto;
     display: block;
