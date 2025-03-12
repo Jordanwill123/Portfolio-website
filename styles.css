@@ -62,29 +62,31 @@ a:hover {
 }
 
 /* Blue Background with White Text for Contact, Projects, and Resume */
-#projects, #contact, #resume {
+.info-container {
+    display: flex;
+    justify-content: space-between; /* Space between both sections */
+    gap: 20px; /* Adds space between them */
+    margin-top: 20px;
+}
+
+/* Resume and Contact styling */
+#project #resume, #contact {
+    flex: 1; /* Makes both sections take equal space */
     background-color: #2575fc; /* Blue background */
-    color: #fff; /* White text */
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #2575fc;
     color: white;
-    border: none;
+    padding: 20px;
     border-radius: 5px;
-    cursor: pointer;
+    text-align: center;
 }
 
-button:hover {
-    background-color: #1a60c4;
+#resume a, #contact a {
+    color: #000; /* Black links */
+    text-decoration: none;
 }
 
+#resume a:hover, #contact a:hover {
+    color: #333;
+}
 .qrcode-img {
   max-width: 300px; /* Adjust to the size you want */
     max-height: 300px;
