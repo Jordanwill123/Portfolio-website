@@ -1,59 +1,184 @@
-const chatbotForm = document.getElementById('chatbot-form');
-const userInput = document.getElementById('user-input');
-const chatWindow = document.getElementById('chat-window');
+{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ 
+ body {
+     font-family: Arial, sans-serif;
+     background-color: #2575fc; /* Blue background for the entire page */
+     color: #fff; /* White text for contrast */
+     line-height: 1.6;
+ }
+ 
+ .container {
+     width: 80%;
+     margin: 0 auto;
+ }
+ 
+ header {
+     background-color: #2575fc;
+     color: #fff;
+     text-align: center;
+     padding: 20px;
+     border-radius: 5px;
+     margin-bottom: 20px;
+ }
+ 
+ header h1 {
+     font-size: 36px;
+ }
+ 
+ .profile-img {
+     width: 150px;
+     height: 150px;
+     border-radius: 50%;
+     margin-top: 10px;
+ }
+ 
+ section {
+     padding: 40px 0;
+ }
+ 
+ h2 {
+     font-size: 28px;
+     margin-bottom: 20px;
+ }
+ 
+ /* About Section - Black Background */
+ #about {
+     background-color: #000; /* Black background for About section */
+     color: #fff;
+ }
+ 
+ /* Links - Black Color */
+ a {
+     color: #000; /* Black Links */
+     text-decoration: none;
+ }
+ 
+ a:hover {
+     color: #333; /* Slightly lighter black on hover */
+ }
+ 
+ /* Blue Background with White Text for Contact, Projects, and Resume */
+ .info-container {
+     display: flex;
+     justify-content: space-between; /* Space between both sections */
+     gap: 20px; /* Adds space between them */
+     margin-top: 20px;
+ }
+ 
+ /* Resume and Contact styling */
+ #project, #resume, #contact {
+     flex: 1; /* Makes both sections take equal space */
+     background-color: #2575fc; /* Blue background */
+     color: white;
+     padding: 20px;
+     border-radius: 5px;
+     text-align: center;
+ }
+ 
+ #project a, #resume a, #contact a {
+     color: #000; /* Black links */
+     text-decoration: none;
+ }
+ 
+ #project a:hover #resume a:hover, #contact a:hover {
+     color: #333;
+ }
+ 
+ #qrcode-img {
+     display: flex;
+     flex-direction: column;
+     align-items: center; /* Center horizontally */
+     justify-content: center; /* Center vertically */
+     text-align: center;
+     margin-top: 20px;
+     width: 100%; /* Ensure it takes the full width */
+     height: auto; /* Adjust height to content */
+ }
+.qrcode-img {
+     width: 300px;
+     height: 300px;
+     cursor: pointer;
+     transition: transform 0.2s ease;
+ }
 
-// Define your About Me, Skills, and Experience
-const aboutMe = "I’m Jordan Williams, a senior at Bowie State University studying Computer Technology with a track in Network Infrastructure. I’m a student-athlete who loves working out, and I also own Lenair Auto Detailing in Brandywine, MD.";
-const skills = "I have experience with JavaScript, HTML5, computer hardware, and networking. I'm also skilled in customer service, business management, and leadership.";
-const experience = "I’ve worked at Shoe City, Chick-fil-A, and currently work at Harmony at Waldorf. I’ve managed customer service, inventory, and business operations at Lenair Auto Detailing since May 2020.";
+.qrcode-img:hover {
+     transform: scale(1.05);
+ }
+ 
+ /* Chatbot */
+ /* Chat Container */
+ #chat-container {
+     width: 350px;
+     height: 500px;
+     background-color: #ffffff;
+     border: 2px solid #ccc;
+     border-radius: 12px;
+     box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+     display: flex;
+     flex-direction: column;
+ }
 
-// Function to handle sending a message
-function sendMessage(event) {
-    event.preventDefault();
+/* Chat Window */
+ #chat-window {
+     flex-grow: 1;
+     padding: 10px;
+     overflow-y: auto;
+     border-bottom: 1px solid #ccc;
+ }
 
-    const message = userInput.value.trim().toLowerCase();
-    if (!message) return;
+/* Chat Messages */
+ .message {
+     padding: 8px 12px;
+     margin-bottom: 6px;
+     border-radius: 8px;
+     max-width: 80%;
+     word-wrap: break-word;
+ }
 
-    // Display user message
-    appendMessage('You', message);
-    userInput.value = '';
+.user-message {
+     background-color: #d1eaff;
+     align-self: flex-end;
 
-    // Handle chatbot response
-    handleResponse(message);
 }
-
-function handleResponse(message) {
-    if (message.includes('about') || message.includes('who are you') || message.includes('introduce')) {
-        appendMessage('Bot', aboutMe);
-    } else if (message.includes('skills') || message.includes('what can you do')) {
-        appendMessage('Bot', skills);
-    } else if (message.includes('experience') || message.includes('work') || message.includes('job')) {
-        appendMessage('Bot', experience);
-    } else if (message.includes('hi') || message.includes('hello')) {
-        appendMessage('Bot', 'Hello! Ask me about my skills, experience, or background.');
-    } else if (message.includes('bye') || message.includes('goodbye')) {
-        appendMessage('Bot', 'Goodbye! Have a great day!');
-    } else {
-        appendMessage('Bot', 'I’m not sure how to answer that. Ask me about my skills, experience, or background.');
-    }
+.bot-message {
+     background-color: #f1f1f1;
+     align-self: flex-start;
 }
+/* Chat Input */
+ #chatbot-form {
+     display: flex;
+     padding: 8px;
+     background-color: #fafafa;
+     border-top: 1px solid #ccc;
+ }
 
-function appendMessage(sender, message) {
-    const messageElement = document.createElement('div');
-    messageElement.classList.add('message');
+#user-input {
+     flex-grow: 1;
+     padding: 8px;
+     border: none;
+     border-radius: 8px;
+     font-size: 14px;
+     outline: none;
+ }
 
-    if (sender === 'You') {
-        messageElement.classList.add('user-message');
-    } else {
-        messageElement.classList.add('bot-message');
-    }
+button {
+     background-color: #4CAF50;
+     color: white;
+     padding: 8px 16px;
+     margin-left: 8px;
+     border: none;
+     border-radius: 8px;
+     cursor: pointer;
+     font-size: 14px;
+ }
 
-    messageElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
-    chatWindow.appendChild(messageElement);
-
-    // Auto-scroll to the latest message
-    chatWindow.scrollTop = chatWindow.scrollHeight;
+button:hover {
+     background-color: #45a049;
 }
-
-// Add event listener to form submission
-chatbotForm.addEventListener('submit', sendMessage);
