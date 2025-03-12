@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+section {
+    padding: 20px;
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+#home {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+#home img {
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+#chatbot {
+    margin-top: 20px;
+}
+
+#qr-code img {
+    margin-top: 20px;
+}
