@@ -85,7 +85,7 @@ button:hover {
     background-color: #1a60c4;
 }
 
-.qrcode {
+.qrcode-img {
     width: 150px; /* Adjust size */
     height: 150px; /* Adjust size */
     margin-top: 20px;
